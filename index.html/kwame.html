@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Amankwah Esuon | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .electric-blue { color: #3b82f6; }
+        .bg-electric-blue { background-color: #3b82f6; }
+        
+        .typewriter::after {
+            content: "|";
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tighter">S.A.<span class="electric-blue">ESUON</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#intelligence" class="hover:text-blue-400 transition">Intelligence</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition">Lets connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <h2 class="text-blue-500 font-mono mb-4">Hello, World. I am</h2>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Samuel Amankwah Esuon</h1>
+                <p class="text-2xl md:text-3xl text-slate-400 h-12">
+                    I am a <span id="typewriter" class="electric-blue font-semibold"></span>
+                </p>
+                <div class="mt-10 flex space-x-4">
+                    <a href="#projects" class="px-8 py-3 bg-blue-600 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition">View Work</a>
+                    <a href="#contact" class="px-8 py-3 border border-white/20 rounded-full font-semibold hover:bg-white/5 transition">Let's Talk</a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-blue-600 rounded-3xl rotate-6 opacity-20"></div>
+                    <img src="photo_2026-03-14_20-10-04.jpg" alt="Samuel" class="relative z-10 rounded-3xl w-full h-full object-cover border border-white/10 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-slate-900/50 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">About Me</h2>
+            <p class="text-lg text-slate-300 leading-relaxed mb-6">
+                Currently a second-year *Computer Engineering student at KNUST, I sit at the intersection of raw hardware and intelligent code. My passion lies in bridging the gap between physical systems and software intelligence.
+            </p>
+            <p class="text-lg text-slate-300 leading-relaxed italic border-l-4 border-blue-500 pl-6 text-left">
+                "I believe that localized data collection through IoT is the key to solving urban challenges in Ghana. By capturing real-time environmental data, we can build smarter, more resilient communities."
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Services</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <i data-lucide="code" class="w-10 h-10 mb-6 electric-blue"></i>
+                    <h3 class="text-xl font-bold mb-3">Web Development</h3>
+                    <p class="text-sm text-slate-400">Responsive UI/UX designs and robust full-stack web applications tailored to your needs.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <i data-lucide="cpu" class="w-10 h-10 mb-6 electric-blue"></i>
+                    <h3 class="text-xl font-bold mb-3">Hardware Support</h3>
+                    <p class="text-sm text-slate-400">Diagnostic services and maintenance for IT infrastructure and computing hardware.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <i data-lucide="bar-chart-3" class="w-10 h-10 mb-6 electric-blue"></i>
+                    <h3 class="text-xl font-bold mb-3">Data Analytics</h3>
+                    <p class="text-sm text-slate-400">Extracting meaningful insights from raw data to drive informed decision-making.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <i data-lucide="lightbulb" class="w-10 h-10 mb-6 electric-blue"></i>
+                    <h3 class="text-xl font-bold mb-3">IT Consultation</h3>
+                    <p class="text-sm text-slate-400">Strategic planning and tech implementation for small businesses and startups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section id="intelligence" class="py-24 bg-slate-900/50 px-6">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Technical Intelligence</h2>
+        
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="glass-card p-6 rounded-2xl h-[400px] flex items-center justify-center">
+                <canvas id="skillRadar"></canvas>
+            </div>
+
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <i data-lucide="binary" class="w-5 h-5 electric-blue"></i> Software & Data
+                    </h3>
+                    <div class="flex flex-wrap gap-6">
+                        <div class="flex flex-col items-center group">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-12 h-12 grayscale group-hover:grayscale-0 transition" alt="Python">
+                            <span class="text-xs mt-2 text-slate-400">Python</span>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 grayscale group-hover:grayscale-0 transition" alt="JS">
+                            <span class="text-xs mt-2 text-slate-400">JavaScript</span>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-12 h-12 grayscale group-hover:grayscale-0 transition" alt="SQL">
+                            <span class="text-xs mt-2 text-slate-400">SQL</span>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12 grayscale group-hover:grayscale-0 transition" alt="React">
+                            <span class="text-xs mt-2 text-slate-400">React</span>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-12 h-12 grayscale group-hover:grayscale-0 transition" alt="GitHub">
+                            <span class="text-xs mt-2 text-slate-400">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <i data-lucide="cpu" class="w-5 h-5 electric-blue"></i> Engineering & Hardware
+                    </h3>
+                    <div class="flex flex-wrap gap-6">
+                        <div class="flex flex-col items-center group">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="w-12 h-12 grayscale group-hover:grayscale-0 transition" alt="C">
+                            <span class="text-xs mt-2 text-slate-400">C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group relative overflow-hidden rounded-2xl glass-card">
+                    <img src="Face of metro.jpg" alt="Metro Haven" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent flex flex-col justify-end p-8">
+                        <h3 class="text-2xl font-bold mb-2">Metro Haven</h3>
+                        <p class="text-slate-300 mb-4">A high-performance E-commerce fashion platform.</p>
+                        <div class="flex gap-2 text-xs font-mono uppercase">
+                            <span class="px-2 py-1 bg-blue-900/50 rounded">HTML/CSS</span>
+                            <span class="px-2 py-1 bg-blue-900/50 rounded">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl glass-card">
+                    <img src="pexels-clickerhappy-1468658.jpg" alt="IoT Research" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent flex flex-col justify-end p-8">
+                        <h3 class="text-2xl font-bold mb-2">IoT Heat Stress Mitigation</h3>
+                        <p class="text-slate-300 mb-4">Urban climate research using AI and distributed sensors in Osu, Ghana.</p>
+                        <div class="flex gap-2 text-xs font-mono uppercase">
+                            <span class="px-2 py-1 bg-blue-900/50 rounded">IoT</span>
+                            <span class="px-2 py-1 bg-blue-900/50 rounded">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl glass-card">
+                    <img src="Tracking app.jpg" alt="Trackify" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent flex flex-col justify-end p-8">
+                        <h3 class="text-2xl font-bold mb-2">Trackify</h3>
+                        <p class="text-slate-300 mb-4">A budgeting app for tracking expenses and income.</p>
+                        <div class="flex gap-2 text-xs font-mono uppercase">
+                            <span class="px-2 py-1 bg-blue-900/50 rounded">HTML</span>
+                            <span class="px-2 py-1 bg-blue-900/50 rounded">CSS</span>
+                            <span class="px-2 py-1 bg-blue-900/50 rounded">JavaScript</span>
+                            <span class="px-2 py-1 bg-blue-900/50 rounded">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-900/50 px-6 border-t border-white/5">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-slate-400 max-w-lg mx-auto">Whether you have a question about a project or just want to talk tech, my inbox is always open.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                
+                <div class="space-y-6">
+                    <a href="tel:+233XXXXXXXXX" class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-full bg-blue-600/10 flex items-center justify-center group-hover:bg-blue-600 transition">
+                            <i data-lucide="phone" class="w-5 h-5 text-blue-500 group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Call Me</p>
+                            <p class="text-slate-200">+233 50 9888 752</p>
+                            <p class="text-slate-200">+233 25 9898 675</p>
+                        </div>
+                    </a>
+
+                    <a href="mailto:samuel@example.com" class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-full bg-blue-600/10 flex items-center justify-center group-hover:bg-blue-600 transition">
+                            <i data-lucide="mail" class="w-5 h-5 text-blue-500 group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Email</p>
+                            <p class="text-slate-200">samuesuon@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="pt-8">
+                    <h4 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-6">Find me on</h4>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/offical-amankwah" target="_blank" class="w-12 h-12 rounded-xl bg-slate-800 border border-white/10 flex items-center justify-center hover:border-blue-500 hover:-translate-y-1 transition duration-300">
+                            <i data-lucide="github" class="w-6 h-6 text-slate-300"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/samuel-esuon-912983363/" target="_blank" class="w-12 h-12 rounded-xl bg-slate-800 border border-white/10 flex items-center justify-center hover:border-blue-500 hover:-translate-y-1 transition duration-300">
+                            <i data-lucide="linkedin" class="w-6 h-6 text-slate-300"></i>
+                        </a>
+                        <a href="https://www.instagram.com/him_kwame/" target="_blank" class="w-12 h-12 rounded-xl bg-slate-800 border border-white/10 flex items-center justify-center hover:border-blue-500 hover:-translate-y-1 transition duration-300">
+                            <i data-lucide="instagram" class="w-6 h-6 text-slate-300"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl shadow-2xl">
+                <form action="https://formspree.io/f/xqeyddlj" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Full Name</label>
+                        <input type="text" name="name" required class="w-full bg-slate-900 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Email Address</label>
+                        <input type="email" name="email" required class="w-full bg-slate-900 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 uppercase mb-2">Message</label>
+                        <textarea name="message" rows="4" required class="w-full bg-slate-900 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 py-4 rounded-lg font-bold hover:bg-blue-700 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="py-12 border-t border-white/10 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Samuel Amankwah Esuon. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Lucide Icon initialization
+        lucide.createIcons();
+
+        // Typewriter Effect
+        const textElement = document.getElementById('typewriter');
+        const phrases = ["Computer Engineering Student", "Aspiring Data Scientist", "Tech Innovator"];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+            if (isDeleting) {
+                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                setTimeout(type, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(type, 500);
+            } else {
+                setTimeout(type, isDeleting ? 50 : 100);
+            }
+        }
+        type();
+
+    const ctx = document.getElementById('skillRadar').getContext('2d');
+    new Chart(ctx, {
+    type: 'radar',
+    data: {
+        labels: ['Web Dev', 'Data Science', 'Hardware', 'Algorithms', 'UI/UX'],
+        datasets: [{
+            label: 'Skill Proficiency',
+            data: [85, 90, 75, 65, 70],
+            backgroundColor: 'rgba(59, 130, 246, 0.2)',
+            borderColor: '#3b82f6',
+            pointBackgroundColor: '#3b82f6',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            r: {
+                angleLines: { color: 'rgba(255, 255, 255, 0.1)' },
+                grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                pointLabels: { color: '#94a3b8', font: { size: 12 } },
+                ticks: { display: false },
+                suggestedMin: 0,
+                suggestedMax: 100
+            }
+        },
+        plugins: {
+            legend: { display: false }
+        }
+    }
+});
+    </script>
+   
+</body>
+</html>
